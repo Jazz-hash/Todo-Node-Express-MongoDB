@@ -12,9 +12,9 @@
     <h1>Hello World !!</h1>
         <h3>Todos</h3>
         <ul>
-        <% for (var i=0; i < todos.length; i++ ) { %>
-           <li>#<%= todos[i].id %> <%= todos[i].title %></li> 
-        <% } %>
+        <% todos.forEach((todo) => { %>
+           <li>#<%= todo._id %> <%= todo.title %></li> 
+        <% }) %>
         </ul>
     </section>
 
